@@ -1,5 +1,4 @@
-"""Basic unit testing.
-"""
+"""Basic unit testing."""
 import os
 
 from fastapi.testclient import TestClient
@@ -35,6 +34,13 @@ def test_header(client: TestClient, admin_key: str):
     api_key = get_api_key(client, admin_key)
 
     response = client.get("/secure", headers={"x-api-key": api_key})
+    assert response.status_code == 200
+
+
+def test_no_auth(client: TestClient):
+    response = client.get("/no-auth?x-api-key=123456")
+    assert response.status_code == 200
+    response = client.get("/no-auth", headers={"x-api-key": "qwerty"})
     assert response.status_code == 200
 
 
