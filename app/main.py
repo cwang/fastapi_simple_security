@@ -25,4 +25,5 @@ async def secure_endpoint():
 async def no_auth_endpoint():
     return {"message": "This is a no-auth endpoint"}
 
+
 app.include_router(router=create_auth_router(data_store), prefix="/auth", tags=["_auth"])

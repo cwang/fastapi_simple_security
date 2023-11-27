@@ -43,6 +43,9 @@ def test_no_auth(client: TestClient):
     response = client.get("/no-auth", headers={"x-api-key": "qwerty"})
     assert response.status_code == 200
 
+    response = client.get("/no-auth")
+    assert response.status_code == 403
+
 
 def test_revoke(client: TestClient, admin_key: str):
     api_key = get_api_key(client, admin_key)
