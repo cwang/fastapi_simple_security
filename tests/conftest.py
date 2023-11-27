@@ -1,5 +1,4 @@
 """Pytest configuration."""
-import time
 import os
 
 import pytest
