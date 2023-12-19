@@ -1,5 +1,3 @@
-"""Basic unit testing.
-"""
 import sqlite3
 
 from app.main import db_location

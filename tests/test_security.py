@@ -1,4 +1,3 @@
-"""Basic unit testing."""
 import os
 
 from fastapi.testclient import TestClient
