@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/cwang/fastapi_sqlmodel_security/compare/v1.0.0...v1.0.1) (2023-12-19)
+
+
+### Bug Fixes
+
+* **tests:** improve tests ([#20](https://github.com/cwang/fastapi_sqlmodel_security/issues/20)) ([bc301b7](https://github.com/cwang/fastapi_sqlmodel_security/commit/bc301b76832b926830d14d721816fe9d21c09b5f))
+
 ## [1.0.0](https://github.com/cwang/fastapi_sqlmodel_security/compare/v0.2.0...v1.0.0) (2023-11-27)
 
 
